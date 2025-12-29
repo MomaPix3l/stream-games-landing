@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Stream Games by MomaPix3l – interactive Twitch cards, mini-games, and custom chaos. Collect cards, trigger events, and play chat-powered games."
+    content="Stream Games by MomaPix3l — interactive Twitch cards, mini-games, and custom chaos. Collect cards, trigger live effects, and play chat-powered games."
   />
 
   <style>
@@ -24,11 +24,7 @@
       --success: #4cd964;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -37,18 +33,10 @@
       min-height: 100%;
     }
 
-    body {
-      display: flex;
-      justify-content: center;
-      padding: 2rem 1rem 4rem;
-    }
+    body { display: flex; justify-content: center; padding: 2rem 1rem 4rem; }
 
-    .page {
-      width: 100%;
-      max-width: 1080px;
-    }
+    .page { width: 100%; max-width: 1080px; }
 
-    /* Glitchy gradient border wrapper */
     .shell {
       position: relative;
       border-radius: 18px;
@@ -69,16 +57,10 @@
     }
 
     @media (min-width: 768px) {
-      .shell-inner {
-        padding: 2.5rem 2.25rem 3rem;
-      }
+      .shell-inner { padding: 2.5rem 2.25rem 3rem; }
     }
 
-    /* Hero */
-    .hero {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+    .hero { text-align: center; margin-bottom: 2rem; }
 
     .hero-kicker {
       letter-spacing: 0.15em;
@@ -105,7 +87,7 @@
     .hero-sub {
       font-size: 0.95rem;
       color: var(--text-muted);
-      max-width: 620px;
+      max-width: 700px;
       margin: 0 auto 1.75rem;
     }
 
@@ -155,17 +137,9 @@
       transform: translateY(-1px);
     }
 
-    .hero-note {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+    .hero-note { font-size: 0.82rem; color: var(--text-muted); }
 
-    /* Sections */
-    .sections {
-      display: grid;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
+    .sections { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
 
     .card {
       border-radius: 14px;
@@ -175,17 +149,10 @@
     }
 
     @media (min-width: 768px) {
-      .card {
-        padding: 1.2rem 1.3rem 1.3rem;
-      }
+      .card { padding: 1.2rem 1.3rem 1.3rem; }
     }
 
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.4rem;
-    }
+    .card-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem; }
 
     .card-tag {
       font-size: 0.7rem;
@@ -194,25 +161,13 @@
       color: var(--accent2);
     }
 
-    .card-title {
-      font-size: 1.02rem;
-      font-weight: 600;
-    }
+    .card-title { font-size: 1.02rem; font-weight: 600; }
 
-    .card-body {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
+    .card-body { font-size: 0.9rem; color: var(--text-muted); line-height: 1.4; }
 
-    .card-body p + p {
-      margin-top: 0.4rem;
-    }
+    .card-body p + p { margin-top: 0.4rem; }
 
-    .list {
-      list-style: none;
-      margin-top: 0.35rem;
-    }
+    .list { list-style: none; margin-top: 0.35rem; }
 
     .list li {
       display: flex;
@@ -222,18 +177,9 @@
       font-size: 0.9rem;
     }
 
-    .list li span.bullet {
-      font-size: 0.75rem;
-      color: var(--accent1);
-      margin-top: 0.1rem;
-    }
+    .list li span.bullet { font-size: 0.75rem; color: var(--accent1); margin-top: 0.1rem; }
 
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.35rem;
-    }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem; }
 
     .pill {
       border-radius: 999px;
@@ -243,20 +189,12 @@
       color: var(--text-muted);
     }
 
-    .pill-strong {
-      border-color: rgba(0, 245, 255, 0.4);
-      color: var(--accent1);
-    }
+    .pill-strong { border-color: rgba(0, 245, 255, 0.4); color: var(--accent1); }
 
-    .two-col {
-      display: grid;
-      gap: 1.2rem;
-    }
+    .two-col { display: grid; gap: 1.2rem; }
 
     @media (min-width: 900px) {
-      .two-col {
-        grid-template-columns: 1.1fr 0.9fr;
-      }
+      .two-col { grid-template-columns: 1.1fr 0.9fr; }
     }
 
     .badge {
@@ -267,22 +205,11 @@
       margin-bottom: 0.25rem;
     }
 
-    .mini-title {
-      font-size: 0.92rem;
-      font-weight: 600;
-      margin-top: 0.3rem;
-    }
+    .mini-title { font-size: 0.92rem; font-weight: 600; margin-top: 0.3rem; }
 
-    .cta-footer {
-      margin-top: 1.8rem;
-      text-align: center;
-      font-size: 0.92rem;
-      color: var(--text-muted);
-    }
+    .cta-footer { margin-top: 1.8rem; text-align: center; font-size: 0.92rem; color: var(--text-muted); }
 
-    .cta-footer strong {
-      color: var(--accent1);
-    }
+    .cta-footer strong { color: var(--accent1); }
 
     .cta-footer-actions {
       margin-top: 0.65rem;
@@ -298,9 +225,7 @@
       border-bottom: 1px dotted rgba(0, 245, 255, 0.5);
     }
 
-    .link-inline:hover {
-      border-bottom-style: solid;
-    }
+    .link-inline:hover { border-bottom-style: solid; }
   </style>
 </head>
 <body>
@@ -315,29 +240,27 @@
             Interactive <span class="hero-gradient">Twitch Stream</span> with Cards, Chaos & Mini-Games
           </h1>
           <p class="hero-sub">
-            Collect cards, trigger events, and play chat-powered games like DIRTY, Yahtzee, and the upcoming TwitchOpoly.
-            This is a system that you are part of.
+            Stream Games is a custom interactive system: collectible cards, live effects, and chat-powered mini-games.
+            Viewers collect, play, and shape what happens on stream — without needing to memorize commands.
           </p>
 
           <div class="hero-actions">
-            <!-- TODO: replace href with your real Twitch URL -->
             <a href="https://twitch.tv/MomaPix3l" class="btn btn-primary">
               <span>Watch on Twitch</span>
             </a>
-            <!-- TODO: replace href with your real Discord link (you already have one) -->
             <a href="https://discord.gg/GXbfuVDF5P" class="btn btn-secondary">
               <span>Join the Discord</span>
             </a>
           </div>
           <div class="hero-note">
-            Awesome experienced live with an amazing community.
+            Drops, events, and systems-in-progress — built live with the community.
           </div>
         </header>
 
         <!-- MAIN SECTIONS -->
         <section class="sections">
 
-          <!-- What makes this stream different -->
+          <!-- Overview -->
           <article class="card">
             <div class="card-header">
               <div class="card-tag">Overview</div>
@@ -345,131 +268,77 @@
             </div>
             <div class="card-body">
               <p>
-                This is a tech-driven, gameified Twitch stream built by a system administrator who designs entire
-                interactive systems for fun — cards, overlays, automations, and mini-games.
+                This channel is a mix of gaming, builds, and interactive tooling — created by a system administrator who
+                designs full systems: cards, overlays, automations, and mini-games.
               </p>
               <ul class="list">
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Custom card drops with rarities from Common to Legendary.</span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Chat-controlled mini-games that change the flow of the stream.</span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Events and chaos you can trigger — within reason and within TOS.</span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>A welcoming space where anyone can join in, interact, and shape the Wonderland experience. </span>
-                </li>
+                <li><span class="bullet">•</span><span>Collectible cards with rarities from <strong>Common → Legendary</strong>, plus special event cards.</span></li>
+                <li><span class="bullet">•</span><span>Redeemable effects that trigger stream actions, challenges, or visual changes.</span></li>
+                <li><span class="bullet">•</span><span>Chat games that reward participation — and spectators are still welcome.</span></li>
+                <li><span class="bullet">•</span><span>A welcoming space where viewers can join in, collaborate, and help shape the Wonderland experience.</span></li>
               </ul>
             </div>
           </article>
 
-          <!-- Card ecosystem -->
+          <!-- Cards -->
           <article class="card">
             <div class="card-header">
               <div class="card-tag">Cards</div>
               <h2 class="card-title">Wonderland Card Ecosystem</h2>
-             <div style="text-align:center; margin-top:1rem;">
-    </div>
-
-
             </div>
             <div class="card-body">
               <p>
-                Wonderland Card is the custom card system running behind the stream. Cards can be earned, collected,
-                and redeemed to influence what happens live.
+                Wonderland Cards are the collectible system running behind the stream. Cards can be earned, collected,
+                and played to influence what happens live.
               </p>
               <ul class="list">
-                <li>
-                  <span class="bullet">•</span>
-                  <span><strong>Earn cards</strong> through drops, events, support, and special moments.</span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span><strong>Collect by rarity</strong>: Common, Rare, Epic, Legendary, and special event cards.</span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span><strong>Redeem effects</strong> that trigger challenges, visual changes, or on-stream actions.</span>
-                </li>
+                <li><span class="bullet">•</span><span><strong>Earn cards</strong> through drops, events, support, and special moments.</span></li>
+                <li><span class="bullet">•</span><span><strong>Collect by rarity</strong>: Common, Rare, Epic, Legendary, plus special event cards.</span></li>
+                <li><span class="bullet">•</span><span><strong>Play effects</strong> directly from the UI (packs and card plays are UI-driven).</span></li>
               </ul>
               <div class="pill-row">
-                <span class="pill pill-strong">Card drops</span>
+                <span class="pill pill-strong">UI-driven packs</span>
                 <span class="pill">Rarity-based rewards</span>
-                <span class="pill">Limited-time cards</span>
+                <span class="pill">Limited-time drops</span>
               </div>
-              <!-- If your public UI exists, link it here -->
-              <!-- <p style="margin-top:0.5rem;">
-                View your card inventory: <a href="https://your-card-ui-url-here" class="link-inline">Card Collection UI</a>
-              </p> -->
             </div>
           </article>
 
-          <!-- HOW TO USE YOUR WONDERLAND CARDS -->
-<article class="card">
-  <div class="card-header">
-    <div class="card-tag">Guide</div>
-    <h2 class="card-title">How to Use Your Wonderland Cards</h2>
-  </div>
+          <!-- How to Use -->
+          <article class="card">
+            <div class="card-header">
+              <div class="card-tag">Guide</div>
+              <h2 class="card-title">How to Use Your Wonderland Cards</h2>
+            </div>
 
-  <div class="card-body">
+            <div class="card-body">
+              <p>Wonderland cards let you interact with the stream in real time. Here’s the actual flow:</p>
 
-    <p>Wonderland cards let you interact with the stream in real time. Here’s how to get started:</p>
+              <ul class="list">
+                <li><span class="bullet">•</span><span><strong>Earn packs/cards</strong> during streams via drops, events, and support moments.</span></li>
+                <li><span class="bullet">•</span><span><strong>Open your Card Inventory</strong> to view your collection and packs.</span></li>
+                <li>
+                  <span class="bullet">•</span>
+                  <span><strong>Log in with your Twitch name + Wonderland PIN</strong> to access your inventory securely.</span>
+                </li>
+                <li>
+                  <span class="bullet">•</span>
+                  <span><strong>If you forget your PIN</strong>, type <strong>!wonderland</strong> in chat to receive it by DM.</span>
+                </li>
+                <li><span class="bullet">•</span><span><strong>Open packs in the UI</strong> to reveal new cards.</span></li>
+                <li><span class="bullet">•</span><span><strong>Play cards from the UI</strong> to trigger effects when available.</span></li>
+              </ul>
 
-    <ul class="list">
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Watch the stream</strong> — Cards and packs drop during streams, events, and support milestones.</span>
-      </li>
+              <div style="margin-top:1rem;">
+                <!-- TODO: replace with your real Card UI URL -->
+                <a href="https://momapix3l.github.io/YOUR-CARD-UI/" class="btn btn-primary">
+                  Open Wonderland Card Inventory
+                </a>
+              </div>
+            </div>
+          </article>
 
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Open your Wonderland Card Inventory</strong> to view everything you own.</span>
-      </li>
-
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Log in using your Twitch name and Wonderland PIN</strong> to access your cards securely.</span>
-        <span><strong>If you forget your Wonderland PIN</strong> Type !wonderland in chat.</span>
-      </li>
-
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Collect and organize your cards</strong> — Common, Rare, Epic, and Legendary cards each have unique effects.</span>
-      </li>
-
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Play cards live on stream</strong> using the Play button inside your inventory.</span>
-      </li>
-
-      <li>
-        <span class="bullet">•</span>
-        <span><strong>Open packs</strong> whenever you receive them to discover new cards.</span>
-      </li>
-
-      <li>
-        <span class="bullet">•</span>
-        <span>Your actions help <strong>shape the Wonderland experience</strong> in real time.</span>
-      </li>
-    </ul>
-
-    <div style="margin-top:1rem;">
-      <a href="https://momapix3l.github.io/REPLACE-WITH-CARD-UI/" class="btn-primary">
-        Open Wonderland Card Inventory
-      </a>
-    </div>
-
-  </div>
-</article>
-
-
-          <!-- Two-column: Mini-games + Streamers -->
+          <!-- Two-column -->
           <section class="two-col">
 
             <!-- Mini-games -->
@@ -484,7 +353,7 @@
                   <div class="mini-title">DIRTY</div>
                   <p>
                     A word game that tests how twisted your mind is. You get up to three clues to guess the secret word.
-                    Correct guesses earn letters from the word <strong>D I R T Y</strong>; wrong guesses cost you letters.
+                    Correct guesses earn letters from <strong>D I R T Y</strong>; wrong guesses cost you letters.
                     First to spell it wins.
                   </p>
                 </div>
@@ -493,9 +362,8 @@
                   <div class="badge">Game (By Request)</div>
                   <div class="mini-title">Yahtzee — Chat Edition</div>
                   <p>
-                    Classic Yahtzee, fully controlled by chat commands. Roll up to three times per turn, choose which dice
-                    to keep, and lock in scoring categories.
-                    <strong>The game is disabled by default and must be requested to be enabled during the stream.</strong>
+                    Classic Yahtzee, controlled by chat. Roll up to three times, keep dice, and lock scoring categories.
+                    <strong>It’s disabled by default and enabled on request during the stream.</strong>
                   </p>
                 </div>
 
@@ -507,14 +375,14 @@
                     event cards, and future integration with the card system are planned.
                   </p>
                   <p style="margin-top:0.3rem;">
-                    <strong>I am actively looking for Twitch streamers to feature on the board.</strong>
-                    If you want to be included or nominate someone, reach out on stream or via Discord.
+                    <strong>Looking for Twitch streamers to feature on the board.</strong>
+                    If you want to be included (or nominate someone), reach out on stream or via Discord.
                   </p>
                 </div>
               </div>
             </article>
 
-            <!-- About Pixel + For Streamers -->
+            <!-- About -->
             <article class="card">
               <div class="card-header">
                 <div class="card-tag">Creator</div>
@@ -522,26 +390,14 @@
               </div>
               <div class="card-body">
                 <p>
-                  I’m MomaPix3l — a system administrator by day and streamer / creator by night. I build interactive
-                  systems for Twitch: cards, overlays, web apps, and games that let viewers actually participate instead
-                  of just watching.
+                  I’m MomaPix3l — system administrator by day, streamer/creator by night. I build interactive Twitch systems:
+                  cards, overlays, web apps, and mini-games that let viewers participate instead of just watch.
                 </p>
-                <p style="margin-top:0.4rem;">
-                  If you’re a streamer and interested in:
-                </p>
+                <p style="margin-top:0.4rem;">If you’re a streamer and interested in:</p>
                 <ul class="list">
-                  <li>
-                    <span class="bullet">•</span>
-                    <span>Being featured on the TwitchOpoly board.</span>
-                  </li>
-                  <li>
-                    <span class="bullet">•</span>
-                    <span>Collaborating on events or card drops.</span>
-                  </li>
-                  <li>
-                    <span class="bullet">•</span>
-                    <span>Have an idea for a new Wonderland feature or mini-game? I’m always open to suggestions.</span>
-                  </li>
+                  <li><span class="bullet">•</span><span>Being featured on the TwitchOpoly board.</span></li>
+                  <li><span class="bullet">•</span><span>Collaborating on events or special card drops.</span></li>
+                  <li><span class="bullet">•</span><span>Suggesting a new Wonderland feature or mini-game integration.</span></li>
                 </ul>
                 <p style="margin-top:0.35rem;">
                   Join the Discord and introduce yourself — that’s where collaboration starts.
@@ -557,30 +413,13 @@
               <h2 class="card-title">Stay Connected</h2>
             </div>
             <div class="card-body">
-              <p>
-                Follow for updates, drops, and behind-the-scenes builds:
-              </p>
+              <p>Follow for updates, drops, and behind-the-scenes builds:</p>
               <ul class="list">
-                <li>
-                  <span class="bullet">•</span>
-                  <span>TikTok: <em>Coming soon</em></span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Instagram: <strong>@MomaPix3l</strong></span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>YouTube: <em>Coming soon</em></span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Discord: <a href="https://discord.gg/GXbfuVDF5P" class="link-inline">Join the server</a></span>
-                </li>
-                <li>
-                  <span class="bullet">•</span>
-                  <span>Twitter/X: <em>Coming soon</em></span>
-                </li>
+                <li><span class="bullet">•</span><span>Instagram: <strong>@MomaPix3l</strong></span></li>
+                <li><span class="bullet">•</span><span>Discord: <a href="https://discord.gg/GXbfuVDF5P" class="link-inline">Join the server</a></span></li>
+                <li><span class="bullet">•</span><span>TikTok: <em>Coming soon</em></span></li>
+                <li><span class="bullet">•</span><span>YouTube: <em>Coming soon</em></span></li>
+                <li><span class="bullet">•</span><span>Twitter/X: <em>Coming soon</em></span></li>
               </ul>
               <p style="margin-top:0.4rem;">
                 Staying connected means you don’t miss exclusive card events, limited drops, or new game launches.
@@ -592,11 +431,11 @@
         <!-- FOOTER CTA -->
         <footer class="cta-footer">
           <p>
-            <strong>Ready to see it live?</strong>  
-            Join the stream, collect your first card, and jump into the chaos.
+            <strong>Ready to see it live?</strong>
+            Join the stream, earn your first drop, and jump into the chaos.
           </p>
           <div class="cta-footer-actions">
-            <a href="https://twitch.tv/YourChannelHere" class="btn btn-primary">Watch on Twitch</a>
+            <a href="https://twitch.tv/MomaPix3l" class="btn btn-primary">Watch on Twitch</a>
             <a href="https://discord.gg/GXbfuVDF5P" class="btn btn-secondary">Join the Discord</a>
           </div>
         </footer>
